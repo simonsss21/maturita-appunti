@@ -1,0 +1,68 @@
+site_name: Appunti Maturità
+
+theme:
+  name: material
+  language: it
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+
+  - Italiano:
+      - italiano/index.md
+      - D'Annunzio: italiano/dannunzio.md
+      - Pascoli: italiano/pascoli.md
+      - Verga: italiano/verga.md
+      - Pirandello: italiano/pirandello.md
+      - Svevo: italiano/svevo.md
+      - Ungaretti: italiano/ungaretti.md
+      - Quasimodo: italiano/quasimodo.md
+      - Montale: italiano/montale.md
+      - Decadentismo: italiano/decadentismo.md
+      - Futurismo: italiano/futuristi.md
+      - Crepuscolari: italiano/crepuscolari.md
+
+  - Inglese:
+      - inglese/index.md
+      - How internet began: inglese/how_internet_began.md
+      - How internet works: inglese/how_internet_works.md
+      - Linking computers: inglese/linking_computers.md
+      - Connecting to the internet: inglese/connecting_to_the_internet.md
+      - Web apps: inglese/web_apps.md
+      - Web software: inglese/web_software.md
+      - Web today: inglese/web_today.md
+      - Online dangers: inglese/online_dangers.md
+      - Cryptography: inglese/cryptography.md
+      - Ethical problems of IT: inglese/etical_problems_of_it.md
+
+  - Informatica:
+      - informatica/index.md
+      - Cos'è un database: informatica/cos_e_un_database.md
+      - Modello ER: informatica/modello_er.md
+      - Normalizzazione: informatica/normalizzazione.md
+      - MySQL: informatica/mysql.md
+      - Funzioni di aggregazione: informatica/funzioni_di_aggregazione.md
+      - HTML: informatica/html.md
+      - PHP: informatica/php.md
+
+  - Sistemi e Reti:
+      - sistemi_reti/index.md
+      - Bluetooth: sistemi_reti/bluetooth.md
+      - Crittografia: sistemi_reti/crittografia.md
+      - Firewall: sistemi_reti/firewall.md
+      - Rete cellulare: sistemi_reti/rete_cellulare.md
+      - Server radius: sistemi_reti/server_radius.md
+      - VLAN: sistemi_reti/vlan.md
+      - VPN: sistemi_reti/vpn.md
+      - Wi-Fi: sistemi_reti/wifi.md
+      - Collegamenti rete: sistemi_reti/collegamenti_di_rete.md
+
+  - Educazione civica:
+      - educazione_civica/index.md
+      - ONU: educazione_civica/onu.md
+      - ONU inglese: educazione_civica/onu_inglese.md
+      - Cittadinanza digitale: educazione_civica/cittadinanza_digitale.md
+      - Goal 16: educazione_civica/goal16.md
+      - Articolo 11: educazione_civica/articolo11.md
