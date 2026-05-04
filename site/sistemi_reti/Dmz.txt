@@ -1,0 +1,14 @@
+La DMZ( DeMilitarized Zone), è una zona di rete inermedia tra internet e la rete interna, utilizzata per ospitare servizi pubblici. 
+Serve ad isolare la LAN: anche in caso di compromissione dei servizi nella DMZ, l'attaccante non può accedere direttamente alla rete interna. 
+
+La DMZ è tipicamente separata da uno o due firewall:
+
+Internet ↔ Firewall ↔ DMZ ↔ Firewall ↔ LAN
+
+All'interno della DMZ, non vanno assolutamente depositati dati sensibili/importanti per l'azienda, perche ovviamente accessibili da tutti.
+
+I due firewall(uno deny e uno allow) sono progettati in modo tale da garantire l'accesso a chiunque alla DMZ ma a nessuno alla LAN. 
+
+Firewall esterno: allow, permette l'accesso a tutti
+ 
+Firewall interno: deny, non permette l'accesso a nessuno, tranne a chi inserito nella access list. 

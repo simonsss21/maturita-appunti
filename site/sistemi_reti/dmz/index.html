@@ -19,7 +19,7 @@
     
     
       
-        <title>Dmz - Appunti Maturità</title>
+        <title>DMZ - Appunti Maturità</title>
       
     
     
@@ -59,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#dmz" class="md-skip">
+          Vai al contenuto
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -91,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Dmz
+              DMZ
             
           </span>
         </div>
@@ -1810,6 +1815,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1826,9 +1833,15 @@
 
 
 
-  <h1>Dmz</h1>
-
-
+<h1 id="dmz"><strong>DMZ</strong></h1>
+<p>La <strong>DMZ</strong> (DeMilitarized Zone) è una zona di rete intermedia tra Internet e la rete interna, utilizzata per ospitare servizi pubblici.<br />
+Serve ad isolare la LAN: anche in caso di compromissione dei servizi nella DMZ, l'attaccante non può accedere direttamente alla rete interna. </p>
+<p>La DMZ è tipicamente separata da uno o due firewall:</p>
+<p>Internet ↔ Firewall ↔ DMZ ↔ Firewall ↔ LAN</p>
+<p>All'interno della DMZ, <strong>non vanno assolutamente depositati dati sensibili/importanti per l'azienda</strong>, perché ovviamente accessibili da tutti.</p>
+<p>I due firewall (uno <strong>deny</strong> e uno <strong>allow</strong>) sono progettati in modo tale da garantire l'accesso a chiunque alla DMZ ma a nessuno alla LAN. </p>
+<p>Firewall <strong>esterno</strong>: allow, permette l'accesso a tutti</p>
+<p>Firewall <strong>interno</strong>: deny, non permette l'accesso a nessuno, tranne a chi inserito nella access list.</p>
 
 
 

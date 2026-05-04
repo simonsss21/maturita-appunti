@@ -63,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#crittografia" class="md-skip">
+          Vai al contenuto
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1359,6 +1364,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1824,6 +1831,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1840,9 +1849,30 @@
 
 
 
-  <h1>Crittografia</h1>
-
-
+<h1 id="crittografia"><strong>Crittografia</strong></h1>
+<p>La <strong>crittografia</strong> è un insieme di procedure ideate allo scopo di nascondere il significato di un messaggio, tranne al destinatario.<br />
+Alla base si ha un <strong>cifrario</strong>, nel quale ogni carattere del testo da cifrare viene trasformato in un altro carattere, attraverso un processo chiamato algoritmo di cifratura.<br />
+Esistono anche tecniche che utilizzano codici, il quale ognuno può rappresentare un concetto o un informazione.</p>
+<p>Per cifrare un testo, occorre:
+- un <strong>algoritmo</strong>, che deve essere pubblico,
+- una <strong>chiave</strong>, privata e quanto più sicura possibile.</p>
+<p>La chiave, deve essere la stessa sia per mittente che per destinatario, e serve per criptare e decriptare il messaggio.</p>
+<p>Abbiamo diversi sistemi crittografici:
+- A <strong>sostituzione</strong>: ogni elemento, è trasformato in un altro elemento.
+- A <strong>permutazione</strong>: gli elementi del testo vengono riorganizzati.
+- A <strong>blocchi</strong>: il testo viene diviso in blocchi di bit, e ogni blocco viene elaborato.
+- A <strong>flusso</strong>: elabora un quantitativo di bit variabile. </p>
+<p>Abbiamo due tipi di crittografia, simmetrica e asimmetrica:
+- <strong>Simmetrica</strong>: si utilizza una chiave soltanto, che cripta e decripta il messaggio. Il problema sostanziare sta nell'inviare la chiave al destinatario in maniera sicura.</p>
+<ul>
+<li><strong>Asimmetrica</strong>: si utilizzano due chiavi per ogni soggetto, una pubblica e una privata. Il mittente, cripta il messaggio con la chiave pubblica del destinatario, il quale decripterà il messaggio con la propria chiave privata.  </li>
+</ul>
+<p>È la spiegazione dell'algoritmo RSA, il quale problema sostanziale è garantire l'identità del mittente. Per ovviare a questo si utilizzano enti certificati, in grado di generare delle chiavi certificate.<br />
+  Gli enti certificati, garantiscono: privacy, autenticità, integrità e non ripudio.</p>
+<p>Tramite la crittografia Asimmetrica, possiamo inviare la chiave, permettendoci di utilizzare una crittografia Simmetrica, che risulta piu veloce. </p>
+<p>Alcuni algoritmi:
+- <strong>Simmetrici</strong>: DES (a permutazione), AES (utilizza funzioni lineari, basandosi sul calcolo).
+- <strong>Asimmetrici</strong>: RSA: genera due chiavi (A e B) sia per mittente che per destinatario, una cripta e l'altra decripta (la stessa chiave non puo fare entrambe le cose).</p>
 
 
 
