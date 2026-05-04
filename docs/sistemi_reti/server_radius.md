@@ -1,13 +1,13 @@
 # **Server RADIUS**
 
-Un server RADIUS è un server centralizzato che, tramite il protocollo RADIUS, verifica le credenziali degli utenti (tramite database o sistemi interni) quando si connettono a una rete (es. Wi-Fi aziendale).  
-È usato per gestire l'**AAA**: Authentication, Authorization, Accounting. 
+Un server RADIUS è un server centralizzato che, tramite il protocollo RADIUS, verifica le credenziali degli utenti (tramite database o sistemi interni) quando si connettono a una rete (es. Wi-Fi aziendale).  <br>
+È usato per gestire l'**AAA**: Authentication, Authorization, Accounting. <br>
 
-Viene usato nei Wi-Fi aziendali, nelle VPN e nell'accesso a reti cablate 802.1X.
+Viene usato nei Wi-Fi aziendali, nelle VPN e nell'accesso a reti cablate 802.1X.<br>
 
-Prima di connettersi vanno **verificate le credenziali**. L'utente vede il **Supplicant**, un'interfaccia che funge da client, e ha il compito di inoltrare in **maniera sicura** le credenziali al server centralizzato per effettuare la verifica.  
-Se la verifica va a buon fine l'utente ha **accesso alla rete cablata**.
+Prima di connettersi vanno **verificate le credenziali**. L'utente vede il **Supplicant**, un'interfaccia che funge da client, e ha il compito di inoltrare in **maniera sicura** le credenziali al server centralizzato per effettuare la verifica.<br>  
+Se la verifica va a buon fine l'utente ha **accesso alla rete cablata**.<br>
 
-Il server RADIUS gestisce la **schedulazione**, le impostazioni di rete ed eventuali restrizioni per gli utenti della rete:
-- Ad esempio, tutti gli utenti che hanno come username Admin possono apportare modifiche e gestire i log.
-- Diversamente, tutti gli User sono limitati ad utilizzare la rete.
+Il server RADIUS gestisce la **schedulazione**, le impostazioni di rete ed eventuali restrizioni per gli utenti della rete:<br>
+- Ad esempio, tutti gli utenti che hanno come username Admin possono apportare modifiche e gestire i log.<br>
+- Diversamente, tutti gli User sono limitati ad utilizzare la rete.<br>

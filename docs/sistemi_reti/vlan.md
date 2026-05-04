@@ -1,48 +1,48 @@
 # **VLAN**
 
-Una VLAN (Virtual LAN) è una rete locale virtuale che permette di dividere logicamente una rete fisica in più reti separate.
+Una VLAN (Virtual LAN) è una rete locale virtuale che permette di dividere logicamente una rete fisica in più reti separate.<br>
 
-In pratica, anche se più dispositivi sono collegati allo stesso switch fisico, possono appartenere a reti diverse.
+In pratica, anche se più dispositivi sono collegati allo stesso switch fisico, possono appartenere a reti diverse.<br>
 
-Esempio:
+Esempio:<br>
 
-VLAN 10 → Amministrazione  
-VLAN 20 → Studenti  
-VLAN 30 → Server  
-VLAN 40 → Ospiti  
+VLAN 10 → Amministrazione  <br>
+VLAN 20 → Studenti  <br>
+VLAN 30 → Server  <br>
+VLAN 40 → Ospiti  <br>
 
-Ogni VLAN rappresenta un dominio di broadcast separato: un broadcast inviato nella VLAN 10 non arriva ai dispositivi della VLAN 20.
+Ogni VLAN rappresenta un dominio di broadcast separato: un broadcast inviato nella VLAN 10 non arriva ai dispositivi della VLAN 20.<br>
 
 Le VLAN servono principalmente per:
-- **Segmentare la rete**: separano gruppi di dispositivi in base al ruolo, al reparto o al livello di sicurezza.
-- **Aumentare la sicurezza**: un utente della VLAN ospiti, ad esempio, non può comunicare direttamente con la VLAN amministrazione.
-- **Ridurre il traffico broadcast**: ogni VLAN limita i broadcast solo ai dispositivi appartenenti alla stessa VLAN.
-- **Organizzare meglio la rete**: non serve spostare fisicamente i cavi, basta cambiare la configurazione dello switch.
+- **Segmentare la rete**: separano gruppi di dispositivi in base al ruolo, al reparto o al livello di sicurezza.<br>
+- **Aumentare la sicurezza**: un utente della VLAN ospiti, ad esempio, non può comunicare direttamente con la VLAN amministrazione.<br>
+- **Ridurre il traffico broadcast**: ogni VLAN limita i broadcast solo ai dispositivi appartenenti alla stessa VLAN.<br>
+- **Organizzare meglio la rete**: non serve spostare fisicamente i cavi, basta cambiare la configurazione dello switch.<br>
 
-**Livello OSI**
-Le VLAN lavorano principalmente al livello 2 (Data Link) della pila ISO/OSI, perché si basano sugli switch e sugli indirizzi MAC.  
-Lo standard usato è **IEEE 802.1Q**, che inserisce un’etichetta chiamata VLAN tag dentro il frame Ethernet.
+**Livello OSI**<br>
+Le VLAN lavorano principalmente al livello 2 (Data Link) della pila ISO/OSI, perché si basano sugli switch e sugli indirizzi MAC.<br>  
+Lo standard usato è **IEEE 802.1Q**, che inserisce un’etichetta chiamata VLAN tag dentro il frame Ethernet.<br>
 
-**Trunk port**
-Una trunk port può trasportare traffico di più VLAN contemporaneamente.
+**Trunk port**<br>
+Una trunk port può trasportare traffico di più VLAN contemporaneamente.<br>
 
-È usata per collegare:
-switch ↔ switch  
-switch ↔ router  
-switch ↔ firewall  
-switch ↔ access point aziendale  
+È usata per collegare:<br>
+switch ↔ switch  <br>
+switch ↔ router  <br>
+switch ↔ firewall  <br>
+switch ↔ access point aziendale <br> 
 
-Nel trunk, i frame vengono marcati con un tag 802.1Q (VLAN ID indica a quale VLAN appartiene il frame), così il dispositivo ricevente sa a quale VLAN appartiene ogni frame.  
-Tra due switch passa un unico cavo trunk che trasporta VLAN 10, VLAN 20 e VLAN 30.
+Nel trunk, i frame vengono marcati con un tag 802.1Q (VLAN ID indica a quale VLAN appartiene il frame), così il dispositivo ricevente sa a quale VLAN appartiene ogni frame.  <br>
+Tra due switch passa un unico cavo trunk che trasporta VLAN 10, VLAN 20 e VLAN 30.<br>
 
-**Router-on-a-stick**
+**Router-on-a-stick**<br>
 
-Il router-on-a-stick è una configurazione in cui un router gestisce più VLAN usando una sola interfaccia fisica.  
-Tra switch e router si usa una porta trunk. Sul router si creano più sub-interface, una per ogni VLAN.
+Il router-on-a-stick è una configurazione in cui un router gestisce più VLAN usando una sola interfaccia fisica.<br>  
+Tra switch e router si usa una porta trunk. Sul router si creano più sub-interface, una per ogni VLAN.<br>
 
-Esempio:  
-G0/0.10 → VLAN 10  
-G0/0.20 → VLAN 20  
-G0/0.30 → VLAN 30  
+Esempio:  <br>
+G0/0.10 → VLAN 10  <br>
+G0/0.20 → VLAN 20  <br>
+G0/0.30 → VLAN 30  <br>
 
-Ogni sub-interface ha il gateway della rispettiva VLAN.
+Ogni sub-interface ha il gateway della rispettiva VLAN.<br>
