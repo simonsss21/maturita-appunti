@@ -63,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#firewall" class="md-skip">
+          Vai al contenuto
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1387,6 +1392,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1824,6 +1831,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1840,9 +1849,26 @@
 
 
 
-  <h1>Firewall</h1>
-
-
+<h1 id="firewall"><strong>Firewall</strong></h1>
+<p>Il <strong>firewall</strong> è uno strumento di sicurezza di rete, che controlla e filtra il traffico di dati in ingresso e in uscita da una rete, sulla base di un insieme di regole di sicurezza.<br />
+Analizza i pacchetti, verificando IP sorgente, IP destinazione, porte, protocolli e stato di connessioni.</p>
+<p>Può operare a diversi livelli della pila ISO/OSI:
+- <strong>LIVELLO 3</strong>: IP filtering. 
+- <strong>LIVELLO 4</strong>: port filtering. 
+- <strong>LIVELLO 7</strong>: application-level filtering.</p>
+<p>Esistono due posizioni di Firewall:
+- <strong>Perimetrale</strong>: protegge l'intera rete in ingresso e in uscita.
+- <strong>Privato</strong>: protegge il singolo host sia in ingresso che in uscita. </p>
+<p>Nei firewall il traffico viene controllato tramite regole di tipo allow e deny: 
+- le regole <strong>allow</strong> permettono il passaggio dei pacchetti.
+- le regole <strong>deny</strong>, invece, bloccano il passaggio dei pacchetti</p>
+<p>A livello di politica generale, esistono due approcci:
+- <strong>default allow</strong>, in cui tutto è permesso tranne ciò che è esplicitamente negato (blacklist).
+- <strong>default deny</strong>, in cui tutto è bloccato tranne ciò che è esplicitamente consentito (whitelist).</p>
+<p>Esistono anche delle modalità di funzionamento dei firewall:
+- <strong>Stateless</strong>: il firewall stateless analizza ogni pacchetto in modo indipendente, senza memoria delle connessioni, controllando IP sorgente e destinazione, porte e protocollo, ma non sa se il pacchetto proviene da una connessione già esistente. 
+- <strong>Stateful</strong>: il firewall stateful tiene conto di una tabella di stato delle connessioni, controllando le connessioni attive e il TCP state (stati e fasi della connessione). 
+- <strong>Proxy</strong>: il firewall proxy, a differenza degli altri due, non è trasparente all'utente, poiché si interpone tra client e server: il client invia la richiesta al firewall, il firewall la analizza e, se consentita, la inoltra al server; quindi la connessione viene interrotta e ricreata.</p>
 
 
 

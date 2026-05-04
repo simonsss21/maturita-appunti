@@ -1,0 +1,11 @@
+Un server RADIUS è un server centralizzato che tramite il protocollo RADIUS, verifica le credenziali degli utenti(tramite DataBase o sistemi interni) quando si connettono a una rete (es. Wi-Fi aziendale).
+È usato per gestire l'AAA: Authentication, Authorization, Accounting. 
+
+Viene usato nei WI-Fi aziendali, nelle VPN e nell'accesso a reti cablate 802.1X
+
+Prima di connettersi vanno verificate le credenziali. L'utente vede il Supplicant un interfaccia che funge da client, e ha il compito di inoltrare in maniera sicura le credenziali al Server Centralizzato per effettuare la verifica.
+Se la verifica va a buon fine l'utente ha l'accesso alla rete cablata.
+
+Il Server Radius, gestisce la schedulazione,le impostazioni di rete ed eventuali restrizioni per gli utenti della rete:
+- Ad esempio tutti gli utenti che hanno come username Admin, possono apportare modifiche e gestire i log.
+- Diversamente tutti gli User, sono limitati ad utilizzare la rete.
