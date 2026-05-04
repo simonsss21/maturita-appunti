@@ -1850,39 +1850,39 @@
 
 
 <h1 id="vlan"><strong>VLAN</strong></h1>
-<p>Una VLAN (Virtual LAN) è una rete locale virtuale che permette di dividere logicamente una rete fisica in più reti separate.</p>
-<p>In pratica, anche se più dispositivi sono collegati allo stesso switch fisico, possono appartenere a reti diverse.</p>
-<p>Esempio:</p>
-<p>VLAN 10 → Amministrazione<br />
-VLAN 20 → Studenti<br />
-VLAN 30 → Server<br />
-VLAN 40 → Ospiti  </p>
-<p>Ogni VLAN rappresenta un dominio di broadcast separato: un broadcast inviato nella VLAN 10 non arriva ai dispositivi della VLAN 20.</p>
+<p>Una VLAN (Virtual LAN) è una rete locale virtuale che permette di dividere logicamente una rete fisica in più reti separate.<br></p>
+<p>In pratica, anche se più dispositivi sono collegati allo stesso switch fisico, possono appartenere a reti diverse.<br></p>
+<p>Esempio:<br></p>
+<p>VLAN 10 → Amministrazione  <br>
+VLAN 20 → Studenti  <br>
+VLAN 30 → Server  <br>
+VLAN 40 → Ospiti  <br></p>
+<p>Ogni VLAN rappresenta un dominio di broadcast separato: un broadcast inviato nella VLAN 10 non arriva ai dispositivi della VLAN 20.<br></p>
 <p>Le VLAN servono principalmente per:
-- <strong>Segmentare la rete</strong>: separano gruppi di dispositivi in base al ruolo, al reparto o al livello di sicurezza.
-- <strong>Aumentare la sicurezza</strong>: un utente della VLAN ospiti, ad esempio, non può comunicare direttamente con la VLAN amministrazione.
-- <strong>Ridurre il traffico broadcast</strong>: ogni VLAN limita i broadcast solo ai dispositivi appartenenti alla stessa VLAN.
-- <strong>Organizzare meglio la rete</strong>: non serve spostare fisicamente i cavi, basta cambiare la configurazione dello switch.</p>
-<p><strong>Livello OSI</strong>
-Le VLAN lavorano principalmente al livello 2 (Data Link) della pila ISO/OSI, perché si basano sugli switch e sugli indirizzi MAC.<br />
-Lo standard usato è <strong>IEEE 802.1Q</strong>, che inserisce un’etichetta chiamata VLAN tag dentro il frame Ethernet.</p>
-<p><strong>Trunk port</strong>
-Una trunk port può trasportare traffico di più VLAN contemporaneamente.</p>
-<p>È usata per collegare:
-switch ↔ switch<br />
-switch ↔ router<br />
-switch ↔ firewall<br />
-switch ↔ access point aziendale  </p>
-<p>Nel trunk, i frame vengono marcati con un tag 802.1Q (VLAN ID indica a quale VLAN appartiene il frame), così il dispositivo ricevente sa a quale VLAN appartiene ogni frame.<br />
-Tra due switch passa un unico cavo trunk che trasporta VLAN 10, VLAN 20 e VLAN 30.</p>
-<p><strong>Router-on-a-stick</strong></p>
-<p>Il router-on-a-stick è una configurazione in cui un router gestisce più VLAN usando una sola interfaccia fisica.<br />
-Tra switch e router si usa una porta trunk. Sul router si creano più sub-interface, una per ogni VLAN.</p>
-<p>Esempio:<br />
-G0/0.10 → VLAN 10<br />
-G0/0.20 → VLAN 20<br />
-G0/0.30 → VLAN 30  </p>
-<p>Ogni sub-interface ha il gateway della rispettiva VLAN.</p>
+- <strong>Segmentare la rete</strong>: separano gruppi di dispositivi in base al ruolo, al reparto o al livello di sicurezza.<br>
+- <strong>Aumentare la sicurezza</strong>: un utente della VLAN ospiti, ad esempio, non può comunicare direttamente con la VLAN amministrazione.<br>
+- <strong>Ridurre il traffico broadcast</strong>: ogni VLAN limita i broadcast solo ai dispositivi appartenenti alla stessa VLAN.<br>
+- <strong>Organizzare meglio la rete</strong>: non serve spostare fisicamente i cavi, basta cambiare la configurazione dello switch.<br></p>
+<p><strong>Livello OSI</strong><br>
+Le VLAN lavorano principalmente al livello 2 (Data Link) della pila ISO/OSI, perché si basano sugli switch e sugli indirizzi MAC.<br><br />
+Lo standard usato è <strong>IEEE 802.1Q</strong>, che inserisce un’etichetta chiamata VLAN tag dentro il frame Ethernet.<br></p>
+<p><strong>Trunk port</strong><br>
+Una trunk port può trasportare traffico di più VLAN contemporaneamente.<br></p>
+<p>È usata per collegare:<br>
+switch ↔ switch  <br>
+switch ↔ router  <br>
+switch ↔ firewall  <br>
+switch ↔ access point aziendale <br> </p>
+<p>Nel trunk, i frame vengono marcati con un tag 802.1Q (VLAN ID indica a quale VLAN appartiene il frame), così il dispositivo ricevente sa a quale VLAN appartiene ogni frame.  <br>
+Tra due switch passa un unico cavo trunk che trasporta VLAN 10, VLAN 20 e VLAN 30.<br></p>
+<p><strong>Router-on-a-stick</strong><br></p>
+<p>Il router-on-a-stick è una configurazione in cui un router gestisce più VLAN usando una sola interfaccia fisica.<br><br />
+Tra switch e router si usa una porta trunk. Sul router si creano più sub-interface, una per ogni VLAN.<br></p>
+<p>Esempio:  <br>
+G0/0.10 → VLAN 10  <br>
+G0/0.20 → VLAN 20  <br>
+G0/0.30 → VLAN 30  <br></p>
+<p>Ogni sub-interface ha il gateway della rispettiva VLAN.<br></p>
 
 
 

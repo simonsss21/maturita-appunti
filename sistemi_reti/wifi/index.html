@@ -1850,31 +1850,31 @@
 
 
 <h1 id="wi-fi"><strong>Wi-Fi</strong></h1>
-<p>Il <strong>Wi-Fi</strong> è una tecnologia di comunicazione wireless che consente a dispositivi elettronici di connettersi a una rete locale senza cavi.<br />
-È uno standard di rete basato sui protocolli <strong>IEEE 802.11</strong> che opera nelle bande di frequenza <strong>2,4 GHz</strong> e <strong>5 GHz</strong>. </p>
-<p>Il Wi-Fi opera principalmente ai livelli 1 e 2:
-- Il <strong>livello 1</strong> si occupa della <strong>trasmissione dei bit</strong>,
-- Il <strong>livello 2</strong> si occupa dell'<strong>indirizzo MAC</strong> e dell'<strong>LLC</strong> (suddivisione del messaggio in pacchetti, mentre il <strong>CSMA/CA</strong> gestisce le collisioni).<br />
-  Si hanno 4 indirizzi MAC, di cui <strong>3 utilizzati sempre</strong> (mittente, destinatario, access point).</p>
+<p>Il <strong>Wi-Fi</strong> è una tecnologia di comunicazione wireless che consente a dispositivi elettronici di connettersi a una rete locale senza cavi.  <br>
+È uno standard di rete basato sui protocolli <strong>IEEE 802.11</strong> che opera nelle bande di frequenza <strong>2,4 GHz</strong> e <strong>5 GHz</strong>. <br></p>
+<p>Il Wi-Fi opera principalmente ai livelli 1 e 2:<br>
+- Il <strong>livello 1</strong> si occupa della <strong>trasmissione dei bit</strong>,<br>
+- Il <strong>livello 2</strong> si occupa dell'<strong>indirizzo MAC</strong> e dell'<strong>LLC</strong> (suddivisione del messaggio in pacchetti, mentre il <strong>CSMA/CA</strong> gestisce le collisioni).  <br>
+  Si hanno 4 indirizzi MAC, di cui <strong>3 utilizzati sempre</strong> (mittente, destinatario, access point).<br></p>
 <p><strong>Access point</strong>: condivide l'<strong>SSID</strong>, fa da bridge tra due protocolli, in questo caso tra l'<strong>802.3</strong> (Ethernet) e l'<strong>802.11</strong>.<br />
-Viene garantita la connessione trasmettendo l'SSID ma non può essere considerato sistema di sicurezza poiché <strong>mascherabile</strong>. </p>
-<p>Si hanno due tipi di reti:
-- <strong>Infrastructure</strong>: alla stazione di trasmissione si connettono dei client, che devono essere entro il raggio di portata della stazione.
-- <strong>Ad Hoc</strong>: ogni dispositivo fa da access point per il dispositivo successivo.</p>
+Viene garantita la connessione trasmettendo l'SSID ma non può essere considerato sistema di sicurezza poiché <strong>mascherabile</strong>. <br></p>
+<p>Si hanno due tipi di reti:<br>
+- <strong>Infrastructure</strong>: alla stazione di trasmissione si connettono dei client, che devono essere entro il raggio di portata della stazione.<br>
+- <strong>Ad Hoc</strong>: ogni dispositivo fa da access point per il dispositivo successivo.<br></p>
 <ul>
-<li>La frequenza 2,4 GHz copre <strong>lunghe distanze</strong> ma a <strong>bassa frequenza</strong>.</li>
-<li>La frequenza 5 GHz copre <strong>brevi distanze</strong> ma ad <strong>alta frequenza</strong>. </li>
+<li>La frequenza 2,4 GHz copre <strong>lunghe distanze</strong> ma a <strong>bassa frequenza</strong>.<br></li>
+<li>La frequenza 5 GHz copre <strong>brevi distanze</strong> ma ad <strong>alta frequenza</strong>. <br></li>
 </ul>
-<p>Il protocollo <strong>802.11</strong> ha subito delle rivisitazioni, ogni versione è identificata da una lettera, che si differenzia per la banda di frequenza utilizzata. </p>
-<p>In Ethernet la connessione è <strong>bilaterale</strong>: si hanno due canali (uno per l'invio e uno per la ricezione). </p>
-<p>Nel Wi-Fi questo non avviene perché la potenza della trasmissione è più alta della ricezione e interferisce. Alla luce di ciò, si hanno due problemi:
-- <strong>Stazione nascosta</strong>: si hanno due host lontani tra loro (che non si vedono) e un terzo a metà strada che vedono entrambi. Se entrambi gli host inviano il pacchetto alla stazione si ha una collisione, perciò l'host che intende comunicare deve inviare un <strong>RTS</strong> (richiesta di comunicazione) alla stazione.
-- <strong>Stazione esposta</strong>: si hanno 4 host vicini tra loro (A-B-C-D): se A e B stanno parlando fra loro, C non può comunicare con D perché sente B. Stessa cosa se comunicano C e D e B intende parlare con A. </p>
-<p>Il Wi-Fi utilizza due protocolli per garantire la sicurezza:
-- <strong>WEP</strong>: è il primo standard di sicurezza per reti Wi-Fi, utilizza l'algoritmo di cifratura RC4 (basato sul flusso), una chiave condivisa + un IV variabile ma molto corto e cifra i dati trasmessi tra dispositivo e access point.<br />
-- <strong>WPA</strong>: è una versione aggiornata del WEP, poiché introduce TKIP e chiavi dinamiche più sicure. TKIP è un protocollo introdotto con WPA per migliorare la sicurezza del WEP, utilizzando chiavi dinamiche e un IV più lungo.<br />
-- <strong>WPA2</strong>: è il WPA, ma con l'AES al posto dell'RC4. </p>
-<p>Da sottolineare che l'<strong>RC4</strong> dà problemi con l'<strong>handshake</strong>, poiché se un dispositivo fa una richiesta di disconnessione, un altro dispositivo si può connettere con le credenziali del dispositivo appena disconnesso.</p>
+<p>Il protocollo <strong>802.11</strong> ha subito delle rivisitazioni, ogni versione è identificata da una lettera, che si differenzia per la banda di frequenza utilizzata. <br></p>
+<p>In Ethernet la connessione è <strong>bilaterale</strong>: si hanno due canali (uno per l'invio e uno per la ricezione). <br></p>
+<p>Nel Wi-Fi questo non avviene perché la potenza della trasmissione è più alta della ricezione e interferisce. Alla luce di ciò, si hanno due problemi:<br>
+- <strong>Stazione nascosta</strong>: si hanno due host lontani tra loro (che non si vedono) e un terzo a metà strada che vedono entrambi. Se entrambi gli host inviano il pacchetto alla stazione si ha una collisione, perciò l'host che intende comunicare deve inviare un <strong>RTS</strong> (richiesta di comunicazione) alla stazione.<br>
+- <strong>Stazione esposta</strong>: si hanno 4 host vicini tra loro (A-B-C-D): se A e B stanno parlando fra loro, C non può comunicare con D perché sente B. Stessa cosa se comunicano C e D e B intende parlare con A. <br></p>
+<p>Il Wi-Fi utilizza due protocolli per garantire la sicurezza:<br>
+- <strong>WEP</strong>: è il primo standard di sicurezza per reti Wi-Fi, utilizza l'algoritmo di cifratura RC4 (basato sul flusso), una chiave condivisa + un IV variabile ma molto corto e cifra i dati trasmessi tra dispositivo e access point.  <br>
+- <strong>WPA</strong>: è una versione aggiornata del WEP, poiché introduce TKIP e chiavi dinamiche più sicure. TKIP è un protocollo introdotto con WPA per migliorare la sicurezza del WEP, utilizzando chiavi dinamiche e un IV più lungo.  <br>
+- <strong>WPA2</strong>: è il WPA, ma con l'AES al posto dell'RC4. <br></p>
+<p>Da sottolineare che l'<strong>RC4</strong> dà problemi con l'<strong>handshake</strong>, poiché se un dispositivo fa una richiesta di disconnessione, un altro dispositivo si può connettere con le credenziali del dispositivo appena disconnesso.<br></p>
 
 
 
